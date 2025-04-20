@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giao thông GTVT - CS2</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5fcff;
+      color: #333;
+    }
+    header, footer {
+      background-color: #aee6f9;
+      color: #004d66;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #e0f7ff;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #0077aa;
+      text-decoration: none;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+    .section {
+      background-color: #ffffff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 10px;
+    }
+    textarea, input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #00aaff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hệ thống hỗ trợ giao thông - Trường GTVT CS2</h1>
+  </header>
+
+  <nav>
+    <a href="#map">Bản đồ</a>
+    <a href="#info">Thông tin giao thông</a>
+    <a href="#share">Chia sẻ phương tiện</a>
+    <a href="#chat">Trò chuyện</a>
+    <a href="#cost">Chia sẻ chi phí</a>
+    <a href="#feedback">Góp ý</a>
+    <a href="#guide">Cẩm nang</a>
+  </nav>
+
+  <div class="container">
+    <div class="section" id="map">
+      <h2>Bản đồ khu vực CS2</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.728652404536!2d106.76902837481998!3d10.832735189323264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752763be8ce9a5%3A0x7e05a49dcb82fa53!2sUniversity%20of%20Transport%20and%20Communications%20-%20Campus%20in%20HCM%20City!5e0!3m2!1sen!2s!4v1713618612345"></iframe>
+    </div>
+
+    <div class="section" id="info">
+      <h2>Thông tin giao thông thời gian thật</h2>
+      <ul>
+        <li>Kẹt xe: Đường D2 đang kẹt nhẹ</li>
+        <li>Cấm đường: Không có</li>
+        <li>Xe bus: Tuyến 08, 19, 53 gần CS2</li>
+        <li>Ngập lụt: Không có</li>
+      </ul>
+    </div>
+
+    <div class="section" id="share">
+      <h2>Tìm kiếm chia sẻ phương tiện</h2>
+      <input type="text" placeholder="Nhập điểm đến hoặc tuyến xe bus phù hợp...">
+      <button>Tìm người chia sẻ</button>
+    </div>
+
+    <div class="section" id="chat">
+      <h2>Trò chuyện trực tuyến</h2>
+      <textarea placeholder="Nhập tin nhắn..."></textarea>
+      <button>Gửi</button>
+    </div>
+
+    <div class="section" id="cost">
+      <h2>Chia sẻ chi phí tự động</h2>
+      <input type="number" placeholder="Nhập tổng chi phí (VND)">
+      <input type="number" placeholder="Số người chia sẻ">
+      <button>Tính toán</button>
+    </div>
+
+    <div class="section" id="feedback">
+      <h2>Hộp thư góp ý</h2>
+      <textarea placeholder="Gửi phản hồi hoặc ý kiến đóng góp..."></textarea>
+      <button>Gửi góp ý</button>
+    </div>
+
+    <div class="section" id="guide">
+      <h2>Cẩm nang người dùng</h2>
+      <p>Hướng dẫn sử dụng hệ thống chia sẻ phương tiện, mẹo tiết kiệm chi phí, ứng xử khi đi chung xe, và an toàn giao thông.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Trường Đại học GTVT - Cơ sở 2 | Thiết kế bởi Khoa</p>
+  </footer>
+</body>
+</html>
